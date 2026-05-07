@@ -1,0 +1,62 @@
+name: closik
+description: "Closik - Nền tảng nghe và chia sẻ nhạc trực tuyến."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  
+  # --- HỆ THỐNG FIREBASE ---
+  firebase_core: ^4.7.0
+  firebase_auth: ^6.4.0
+  cloud_firestore: ^6.3.0
+  firebase_storage: ^13.3.0
+
+  # --- ĐĂNG NHẬP GOOGLE ---
+  google_sign_in: ^6.1.6
+
+  # --- PHÁT NHẠC VÀ MẠNG ---
+  just_audio: ^0.9.36
+  dio: ^5.9.2
+  path_provider: ^2.1.5
+  audio_video_progress_bar: ^2.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_native_splash: ^2.4.0
+  flutter_launcher_icons: ^0.13.1
+
+# --- CẤU HÌNH LOGO KHỞI ĐỘNG ---
+flutter_native_splash:
+  color: "#0F0F0F"
+  image: assets/logo.png
+  android: true
+  ios: true
+  android_12:
+    image: assets/logo.png
+    icon_background_color: "#0F0F0F"
+
+# --- CẤU HÌNH ICON ỨNG DỤNG ---
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/app_icon.png"
+  adaptive_icon_background: "#0F0F0F"
+  adaptive_icon_foreground: "assets/app_icon.png"
+
+# --- PHẦN QUAN TRỌNG ĐỂ HIỆN ICON NÚT BẤM ---
+flutter:
+  uses-material-design: true # Đảm bảo dòng này luôn là true để không bị lỗi chữ X
+
+  assets:
+    - assets/
+    - assets/logo.png
+    - assets/app_icon.png
