@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "809167332045",
+    "project_id": "zing-clone-46f35",
+    "storage_bucket": "zing-clone-46f35.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809167332045:android:7cc4463a4409e4290f3f84",
+        "android_client_info": {
+          "package_name": "com.example.closik"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJX29XzUMniTblv_yXOIeIRGVwmCDBsCc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
