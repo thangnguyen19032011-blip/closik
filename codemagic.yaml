@@ -1,0 +1,16 @@
+workflows:
+  android-workflow:
+    name: Closik Android Build
+    max_build_duration: 30
+    instance_type: mac_mini_m1
+    scripts:
+      - name: Get Flutter dependencies
+        script: flutter pub get
+      - name: Build Android APK
+        script: flutter build apk --release --debug
+    artifacts:
+      - build/app/outputs/flutter-apk/*.apk
+    publishing:
+      email:
+        recipients:
+          - thangnguyen19032011@gmail.com # Email của Khang để nhận link tải
